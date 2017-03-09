@@ -1,9 +1,8 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [codewars](#codewars)
-	- [Find the next perfect square!](#find-the-next-perfect-square)
-	- [Duplicate Encoder](#duplicate-encoder)
-	- [Jaden Case Strings](#jaden-case-strings)
+- [Find the next perfect square!](#find-the-next-perfect-square)
+- [Duplicate Encoder](#duplicate-encoder)
+- [Jaden Case Strings](#jaden-case-strings)
 
 <!-- /TOC -->
 # codewars
