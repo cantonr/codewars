@@ -1,5 +1,6 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Vowel Count](#vowel-count)
 - [Find the next perfect square!](#find-the-next-perfect-square)
 - [Duplicate Encoder](#duplicate-encoder)
 - [Jaden Case Strings](#jaden-case-strings)
@@ -7,6 +8,13 @@
 <!-- /TOC -->
 # codewars
 Codewars daily challenges
+
+## Vowel Count
+March 10th, 2017  
+
+Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, and u as vowels for this Kata.
 
 ## Find the next perfect square!
 March 9th, 2017  
