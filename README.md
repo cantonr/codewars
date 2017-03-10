@@ -1,5 +1,6 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [IQ Test](#iq-test)
 - [Vowel Count](#vowel-count)
 - [Find the next perfect square!](#find-the-next-perfect-square)
 - [Duplicate Encoder](#duplicate-encoder)
@@ -8,6 +9,20 @@
 <!-- /TOC -->
 # codewars
 Codewars daily challenges
+
+## IQ Test
+March 10th, 2017  
+
+Bob is preparing to pass IQ test. The most frequent task in this test is to find out which one of the given numbers differs from the others. Bob observed that one number usually differs from the others in evenness. Help Bob — to check his answers, he needs a program that among the given numbers finds one that is different in evenness, and return a position of this number.
+
+! Keep in mind that your task is to help Bob solve a real IQ test, which means indexes of the elements start from 1 (not 0)
+
+Examples :
+```js
+iqTest("2 4 7 8 10") => 3 // Third number is odd, while the rest of the numbers are even
+
+iqTest("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd
+```
 
 ## Vowel Count
 March 10th, 2017  
@@ -26,10 +41,11 @@ Complete the findNextSquare method that finds the next integral perfect square a
 If the parameter is itself not a perfect square, than -1 should be returned. You may assume the parameter is positive.
 
 Examples:
-
+```js
 findNextSquare(121) --> returns 144  
 findNextSquare(625) --> returns 676  
 findNextSquare(114) --> returns -1 since 114 is not a perfect  
+```
 
 ## Duplicate Encoder
 March 9th, 2017  
@@ -37,7 +53,7 @@ March 9th, 2017
 The goal of this exercise is to convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')' if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
 
 Examples:
-
+```js
 "din" => "((("
 
 "recede" => "()()()"
@@ -45,6 +61,7 @@ Examples:
 "Success" => ")())())"
 
 "(( @" => "))(("
+```
 
 ## Jaden Case Strings
 March 8th, 2017  
@@ -54,6 +71,7 @@ Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid 
 Your task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
 
 Example:
-
+```js
 Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
 Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real"
+```
