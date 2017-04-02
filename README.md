@@ -1,5 +1,6 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Reverse or Rotate](#reverse-or-rotate)
 - [IQ Test](#iq-test)
 - [Vowel Count](#vowel-count)
 - [Find the next perfect square!](#find-the-next-perfect-square)
