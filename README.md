@@ -1,5 +1,6 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Reverse Words](#reverse-words)
 - [Build a pile of Cubes](#build-a-pile-of-cubes)
 - [Reverse or Rotate](#reverse-or-rotate)
 - [IQ Test](#iq-test)
@@ -11,6 +12,21 @@
 <!-- /TOC -->
 # codewars
 Codewars daily challenges
+
+## Reverse Words
+April 12th, 2017  
+
+Write a `reverseWords` function that accepts a string as a parameter, and reverses each word in the string. Every space should stay, so you cannot use words from Prelude.
+
+Example:
+```js
+reverseWords("This is an example!"); // returns  "sihT si na !elpmaxe"
+reverse_words("This is an example!") # returns  "sihT si na !elpmaxe"
+```
+```js
+reverseWords "An example!"    -- "nA !elpmaxe"
+reverseWords "double  spaces" -- "elbuod  secaps"
+```
 
 ## Build a pile of Cubes
 April 2nd, 2017
