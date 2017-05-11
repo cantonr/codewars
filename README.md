@@ -60,8 +60,7 @@ Since JavaScript doesn't have native arbitrary large integers, your arguments ar
 lastDigit("10", "10000000000");
 ```
 The kata is still as hard as the variants for Haskell or Python, don't worry.
-=======
->>>>>>> ca9ca97600b9b8c7da04247bd333da8ae288dd59
+
 ## Simple fraction to mixed number converter
 May 10th, 2017  
 
@@ -115,7 +114,6 @@ Also provide:
 - an equals function, so that two vectors who have the same components are equal
 
 The test cases will utilize the user-provided `equals` method.
->>>>>>> dd7a2c10b5efb68ab5fab9afbe27f8335081829a
 
 ## Valid Phone Number
 April 23rd, 2017  
