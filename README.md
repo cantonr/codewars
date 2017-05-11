@@ -1,6 +1,7 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Last digit of a large number](#last-digit-of-a-large-number)
+- [Simple fraction to mixed number converter](#simple-fraction-to-mixed-number-converter)
+- [Vector class](#vector-class)
 - [Valid Phone Number](#valid-phone-number)
 - [Double Cola](#double-cola)
 - [Valid Parenthesis](#valid-parenthesis)
@@ -18,6 +19,7 @@
 # codewars
 Codewars daily challenges
 
+<<<<<<< HEAD
 ## Last digit of a large number
 May 9th, 2017  
 
@@ -47,6 +49,61 @@ Since JavaScript doesn't have native arbitrary large integers, your arguments ar
 lastDigit("10", "10000000000");
 ```
 The kata is still as hard as the variants for Haskell or Python, don't worry.
+=======
+## Simple fraction to mixed number converter
+May 10th, 2017  
+
+Given a string representing a simple fraction `x/y`, your function must return a string representing the corresponding [mixed fraction](https://en.wikipedia.org/wiki/Fraction_%28mathematics%29#Mixed_numbers) in the following format:
+
+`a b/c`
+
+where `a` is integer part and `b/c` is irreducible proper fraction. There must be exactly one space between `a` and `b/c`.
+
+If the `x/y` equals the integer part, return integer part only. If integer part is zero, return the irreducible proper fraction only. In both of these cases, the resulting string must not contain any spaces.
+
+Division by zero should raise an error (preferably, the standard zero division error of your language).
+
+Value ranges
+
+- -10 000 000 < `x` < 10 000 000
+- -10 000 000 < `y` < 10 000 000
+
+Examples:
+```js
+Input: 42/9, expected result: 4 2/3.
+Input: 6/3, expedted result: 2.
+Input: 4/6, expected result: 2/3.
+Input: 0/18891, expected result: 0.
+Input: -10/7, expected result: -1 3/7.
+Inputs 0/0 or 3/0 must raise a zero division error.
+```
+Note
+
+Make sure not to modify the input of your function in-place, it is a bad practice.
+
+## Vector class  
+May 9th, 2017  
+
+Create a Vector object that supports addition, subtraction, dot products, and norms. So, for example:
+```js
+var a = new Vector([1,2,3]);
+var b = new Vector([3,4,5]);
+var c = new Vector([5,6,7,8]);
+a.add(b); // should return Vector([4,6,8])
+a.subtract(b); // should return Vector([-2,-2,-2])
+a.dot(b); // should return 1*3+2*4+3*5 = 26
+a.norm(); // should return sqrt(1^2+2^2+3^2)=sqrt(14)
+a.add(c); // throws an error
+```
+If you try to add, subtract, or dot two vectors with different lengths, **you must throw an error!**
+
+Also provide:
+
+- a toString function, so that using the vectors from above, `a.toString() === '(1,2,3)'` (in Python, this is a `__str__` method, so that `str(a) == '(1,2,3)')`
+- an equals function, so that two vectors who have the same components are equal
+
+The test cases will utilize the user-provided `equals` method.
+>>>>>>> dd7a2c10b5efb68ab5fab9afbe27f8335081829a
 
 ## Valid Phone Number
 April 23rd, 2017  
