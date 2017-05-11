@@ -1,6 +1,7 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Extract the domain name from a URL](#extract-the-domain-name-from-a-url)
+- [Last digit of a large number](#last-digit-of-a-large-number)
 - [Simple fraction to mixed number converter](#simple-fraction-to-mixed-number-converter)
 - [Vector class](#vector-class)
 - [Valid Phone Number](#valid-phone-number)
@@ -30,6 +31,37 @@ domainName("http://www.zombie-bites.com") == "zombie-bites"
 domainName("https://www.cnet.com") == "cnet"
 ```
 
+## Last digit of a large number
+May 9th, 2017  
+
+Define a function
+```js
+var lastDigit = function(str1, str2){
+  // see JavaScript remarks below
+}
+```
+that takes in two numbers `a` and `b` and returns the last decimal digit of `a^b`. Note that `a` and `b` may be very large!
+
+For example, the last decimal digit of `9^7` is `9`, since `9^7 = 4782969`. The last decimal digit of `(2^200)^(2^300)`, which has over `10^92` decimal digits, is `6`.
+
+The inputs to your function will always be non-negative integers.
+
+Examples
+```js
+lastDigit("4", "1")           //       4 => 4
+lastDigit("4", "2")           //      16 => 6
+lastDigit("9", "7")           // 4782969 => 9    
+lastDigit("10","10000000000") //=> 0
+```
+Remarks for JavaScript
+
+Since JavaScript doesn't have native arbitrary large integers, your arguments are going to be strings representing non-negative integers, e.g.
+```js
+lastDigit("10", "10000000000");
+```
+The kata is still as hard as the variants for Haskell or Python, don't worry.
+=======
+>>>>>>> ca9ca97600b9b8c7da04247bd333da8ae288dd59
 ## Simple fraction to mixed number converter
 May 10th, 2017  
 
@@ -83,6 +115,7 @@ Also provide:
 - an equals function, so that two vectors who have the same components are equal
 
 The test cases will utilize the user-provided `equals` method.
+>>>>>>> dd7a2c10b5efb68ab5fab9afbe27f8335081829a
 
 ## Valid Phone Number
 April 23rd, 2017  
