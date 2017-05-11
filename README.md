@@ -1,5 +1,6 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Extract the domain name from a URL](#extract-the-domain-name-from-a-url)
 - [Simple fraction to mixed number converter](#simple-fraction-to-mixed-number-converter)
 - [Vector class](#vector-class)
 - [Valid Phone Number](#valid-phone-number)
@@ -18,6 +19,16 @@
 <!-- /TOC -->
 # codewars
 Codewars daily challenges
+
+## Extract the domain name from a URL
+May 11th, 2017  
+
+Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example:
+```js
+domainName("http://github.com/carbonfive/raygun") == "github"
+domainName("http://www.zombie-bites.com") == "zombie-bites"
+domainName("https://www.cnet.com") == "cnet"
+```
 
 ## Simple fraction to mixed number converter
 May 10th, 2017  
