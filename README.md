@@ -1,8 +1,9 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Catching car mileage numbers](#catching-car-mileage-numbers)
 - [Extract the domain name from a URL](#extract-the-domain-name-from-a-url)
-- [Last digit of a large number](#last-digit-of-a-large-number)
 - [Simple fraction to mixed number converter](#simple-fraction-to-mixed-number-converter)
+- [Last digit of a large number](#last-digit-of-a-large-number)
 - [Vector class](#vector-class)
 - [Valid Phone Number](#valid-phone-number)
 - [Double Cola](#double-cola)
@@ -18,8 +19,58 @@
 - [Jaden Case Strings](#jaden-case-strings)
 
 <!-- /TOC -->
+
 # codewars
 Codewars daily challenges
+
+## Catching car mileage numbers
+May 14th, 2017  
+
+> "7777...8?!??!", exclaimed Bob, "I missed it again! Argh!" Every time there's an interesting number coming up, he   notices and then promptly forgets. Who doesn't like catching  those one-off interesting mileage numbers?
+
+Let's make it so Bob never misses another interesting number. We've hacked into his car's computer, and we have a box hooked up that reads mileage numbers. We've got a box glued to his dash that lights up yellow or green depending on whether it receives a `1` or a `2` (respectively).
+
+It's up to you, intrepid warrior, to glue the parts together. Write the function that parses the mileage number input, and returns a `2` if the number is "interesting" (see below), a `1` if an interesting number occurs within the next two miles, or a `0` if the number is not interesting.
+
+**Note:** In Haskell, we use `No`, `Almost` and `Yes` instead of `0`, `1` and `2`.
+
+**"Interesting" Numbers**
+
+Interesting numbers are 3-or-more digit numbers that meet one or more of the following criteria:
+
+- Any digit followed by all zeros: 100, 90000
+- Every digit is the same number: 1111
+- The digits are sequential, incementing†: 1234
+- The digits are sequential, decrementing‡: 4321
+- The digits are a palindrome: 1221 or 73837
+- The digits match one of the values in the awesomePhrases array  
+
+† For incrementing sequences, `0` should come after `9`, and not before `1`, as in `7890`.  
+‡ For decrementing sequences, `0` should come after `1`, and not before `9`, as in `3210`.
+So, you should expect these inputs and outputs:
+```js
+// "boring" numbers
+isInteresting(3, [1337, 256]);    // 0
+isInteresting(3236, [1337, 256]); // 0
+
+// progress as we near an "interesting" number
+isInteresting(11207, []); // 0
+isInteresting(11208, []); // 0
+isInteresting(11209, []); // 1
+isInteresting(11210, []); // 1
+isInteresting(11211, []); // 2
+
+// nearing a provided "awesome phrase"
+isInteresting(1335, [1337, 256]); // 1
+isInteresting(1336, [1337, 256]); // 1
+isInteresting(1337, [1337, 256]); // 2
+```
+**Error Checking**
+
+- A number is only interesting if it is greater than `99`!
+- Input will always be an integer greater than `0`, and less than `1,000,000,000`.
+- The `awesomePhrases` array will always be provided, and will always be an array, but may be empty. (Not everyone thinks numbers spell funny words...)
+- You should only ever output `0`, `1`, or `2`.
 
 ## Extract the domain name from a URL
 May 11th, 2017  
@@ -30,36 +81,6 @@ domainName("http://github.com/carbonfive/raygun") == "github"
 domainName("http://www.zombie-bites.com") == "zombie-bites"
 domainName("https://www.cnet.com") == "cnet"
 ```
-
-## Last digit of a large number
-May 9th, 2017  
-
-Define a function
-```js
-var lastDigit = function(str1, str2){
-  // see JavaScript remarks below
-}
-```
-that takes in two numbers `a` and `b` and returns the last decimal digit of `a^b`. Note that `a` and `b` may be very large!
-
-For example, the last decimal digit of `9^7` is `9`, since `9^7 = 4782969`. The last decimal digit of `(2^200)^(2^300)`, which has over `10^92` decimal digits, is `6`.
-
-The inputs to your function will always be non-negative integers.
-
-Examples
-```js
-lastDigit("4", "1")           //       4 => 4
-lastDigit("4", "2")           //      16 => 6
-lastDigit("9", "7")           // 4782969 => 9    
-lastDigit("10","10000000000") //=> 0
-```
-Remarks for JavaScript
-
-Since JavaScript doesn't have native arbitrary large integers, your arguments are going to be strings representing non-negative integers, e.g.
-```js
-lastDigit("10", "10000000000");
-```
-The kata is still as hard as the variants for Haskell or Python, don't worry.
 
 ## Simple fraction to mixed number converter
 May 10th, 2017  
@@ -91,6 +112,36 @@ Inputs 0/0 or 3/0 must raise a zero division error.
 Note
 
 Make sure not to modify the input of your function in-place, it is a bad practice.
+
+## Last digit of a large number
+May 9th, 2017  
+
+Define a function
+```js
+var lastDigit = function(str1, str2){
+  // see JavaScript remarks below
+}
+```
+that takes in two numbers `a` and `b` and returns the last decimal digit of `a^b`. Note that `a` and `b` may be very large!
+
+For example, the last decimal digit of `9^7` is `9`, since `9^7 = 4782969`. The last decimal digit of `(2^200)^(2^300)`, which has over `10^92` decimal digits, is `6`.
+
+The inputs to your function will always be non-negative integers.
+
+Examples
+```js
+lastDigit("4", "1")           //       4 => 4
+lastDigit("4", "2")           //      16 => 6
+lastDigit("9", "7")           // 4782969 => 9    
+lastDigit("10","10000000000") //=> 0
+```
+Remarks for JavaScript
+
+Since JavaScript doesn't have native arbitrary large integers, your arguments are going to be strings representing non-negative integers, e.g.
+```js
+lastDigit("10", "10000000000");
+```
+The kata is still as hard as the variants for Haskell or Python, don't worry.
 
 ## Vector class  
 May 9th, 2017  
