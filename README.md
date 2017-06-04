@@ -1,5 +1,6 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Simple Pig Latin](#simple-pig-latin)
 - [Extract the domain name from a URL](#extract-the-domain-name-from-a-url)
 - [Simple fraction to mixed number converter](#simple-fraction-to-mixed-number-converter)
 - [Last digit of a large number](#last-digit-of-a-large-number)
@@ -21,6 +22,14 @@
 
 # codewars
 Codewars daily challenges
+
+## Simple Pig Latin
+June 4th, 2017  
+
+Move the first letter of each word to the end of it, then add 'ay' to the end of the word.
+```js
+pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+```
 
 ## Extract the domain name from a URL
 May 11th, 2017  
