@@ -17,16 +17,16 @@ function dividedBy(func) {return {operand: '/', num: func};}
 function calculation(obj, num) {
   switch (obj.operand) {
     case '+':
-      return obj.num + this.num;
+      return obj.num + num;
       break;
     case '-':
-      return this.num - obj.num;
+      return num - obj.num;
       break;
     case '*':
-      return this.num * obj.num;
+      return num * obj.num;
       break;
     case '/':
-      return this.num / obj.num;
+      return num / obj.num;
       break;
     default:
       return "Not valid function";
