@@ -1,5 +1,6 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Calculating with functions](#calculating-with-functions)
 - [Simple Pig Latin](#simple-pig-latin)
 - [Extract the domain name from a URL](#extract-the-domain-name-from-a-url)
 - [Simple fraction to mixed number converter](#simple-fraction-to-mixed-number-converter)
@@ -22,6 +23,23 @@
 
 # codewars
 Codewars daily challenges
+
+## Calculating with functions  
+July 5th, 2017  
+
+This time we want to write calculations using functions and get the results. Let's have a look at some examples:
+```js
+seven(times(five())); // must return 35
+four(plus(nine())); // must return 13
+eight(minus(three())); // must return 5
+six(dividedBy(two())); // must return 3
+```
+Requirements:
+
+- There must be a function for each number from 0 ("zero") to 9 ("nine")  
+- There must be a function for each of the following mathematical operations: plus, minus, times, dividedBy (`divided_by` in Ruby)  
+- Each calculation consist of exactly one operation and two numbers
+- The most outer function represents the left operand, the most inner function represents the right operand
 
 ## Simple Pig Latin
 June 4th, 2017  
