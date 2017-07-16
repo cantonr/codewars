@@ -1,5 +1,6 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Where my anagrams at?](#where-my-anagrams-at)
 - [Calculating with functions](#calculating-with-functions)
 - [Simple Pig Latin](#simple-pig-latin)
 - [Extract the domain name from a URL](#extract-the-domain-name-from-a-url)
@@ -20,9 +21,28 @@
 - [Jaden Case Strings](#jaden-case-strings)
 
 <!-- /TOC -->
-
 # codewars
 Codewars daily challenges
+
+## Where my anagrams at?
+July 16th, 2017  
+
+What is an anagram? Well, two words are anagrams of each other if they both contain the same letters. For example:
+```js
+'abba' & 'baab' == true
+
+'abba' & 'bbaa' == true
+
+'abba' & 'abbba' == false
+```
+Write a function that will find all the anagrams of a word from a list. You will be given two inputs a word and an array with words. You should return an array of all the anagrams or an empty array if there are none. For example:
+```js
+anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
+
+anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
+
+anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
+```
 
 ## Calculating with functions  
 July 5th, 2017  
