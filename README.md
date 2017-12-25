@@ -1,5 +1,6 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Greed is Good](#greed-is-good)
 - [Where my anagrams at?](#where-my-anagrams-at)
 - [Calculating with functions](#calculating-with-functions)
 - [Simple Pig Latin](#simple-pig-latin)
