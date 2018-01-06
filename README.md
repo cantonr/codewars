@@ -1,7 +1,6 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Ten-Pin Bowling](#ten-pin-bowling)
-		- [Scoring](#scoring)
 - [Greed is Good](#greed-is-good)
 - [Where my anagrams at?](#where-my-anagrams-at)
 - [Calculating with functions](#calculating-with-functions)
@@ -35,7 +34,7 @@ The Challenge
 
 In this challenge you will be given a string representing a player's ten frames. It will look something like this: `'X X 9/ 80 X X 90 8/ 7/ 44'` (in Java: `"X X 9/ 80 X X 90 8/ 7/ 44"`), where each frame is space-delimited, `'X'` represents strikes, and `'/'` represents spares. Your goal is take in this string of frames into a function called bowlingScore and return the players total score.  
 
-#### Scoring
+**Scoring**
 
 The scoring for ten-pin bowling can be difficult to understand, and if you're like most people, easily forgotten if you don't play often. Here is a quick breakdown:  
 
